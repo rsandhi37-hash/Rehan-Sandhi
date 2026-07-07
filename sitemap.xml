@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Main Homepage -->
+  <url>
+    <loc>https://rehansandhi181.netlify.app/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+
+    <image:image>
+      <image:loc>https://rehansandhi181.netlify.app/rehan-sandhi.jpg</image:loc>
+      <image:title>Rehan Sandhi - Web Developer</image:title>
+      <image:caption>Rehan Sandhi - Web Developer. Building fast, modern, SEO-optimized websites using HTML, CSS, JavaScript, GitHub, and Netlify.</image:caption>
+      <image:license>https://rehan-sandhi.blogspot.com/2026/02/my-license.html</image:license>
+    </image:image>
+  </url>
+
+  <!-- About Section (Anchor Link) -->
+  <url>
+    <loc>https://rehansandhi181.netlify.app/#about</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Skills Section (Anchor Link) -->
+  <url>
+    <loc>https://rehansandhi181.netlify.app/#skills</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Projects Section (Anchor Link) -->
+  <url>
+    <loc>https://rehansandhi181.netlify.app/#projects</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Connect Section (Anchor Link) -->
+  <url>
+    <loc>https://rehansandhi181.netlify.app/#connect</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>

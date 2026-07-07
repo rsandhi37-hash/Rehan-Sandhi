@@ -2,292 +2,350 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Interactive Hand-Tracked Particles</title>
-    <style>
-        body { margin: 0; overflow: hidden; background: #000; }
-        video { display: none; } /* Hide the raw video feed */
-        #info {
-            position: absolute; top: 10px; left: 10px; color: white; 
-            font-family: sans-serif; pointer-events: none;
-            background: rgba(0,0,0,0.5); padding: 10px; border-radius: 8px;
-        }
-    </style>
-    <script type="importmap">
-        {
-            "imports": {
-                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
-                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
-            }
-        }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Rehan Sandhi | Web Developer</title>
+    <meta name="title" content="Rehan Sandhi | Web Developer">
+    <meta name="description" content="Rehan Sandhi - Web Developer. Building fast, modern, SEO-optimized websites. Specializing in static sites, GitHub, and Netlify deployment.">
+    <meta name="keywords" content="Rehan Sandhi, Web Developer, web developer India, static sites, Netlify, GitHub, SEO, HTML, CSS, JavaScript, rehan_sandhi_181">
+    <meta name="author" content="Rehan Sandhi">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#0B1026">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="canonical" href="https://rehansandhi181.netlify.app/">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rehansandhi181.netlify.app/">
+    <meta property="og:title" content="Rehan Sandhi | Web Developer">
+    <meta property="og:description" content="Web Developer building fast, modern websites.">
+    <meta property="og:image" content="https://rehansandhi181.netlify.app/rehan-sandhi.png">
+    <meta property="og:image:alt" content="Rehan Sandhi - Web Developer">
+    <meta property="og:site_name" content="Rehan Sandhi">
+    <meta property="og:locale" content="en_IN">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://rehansandhi181.netlify.app/">
+    <meta name="twitter:title" content="Rehan Sandhi | Web Developer">
+    <meta name="twitter:description" content="Web Developer building fast, modern websites.">
+    <meta name="twitter:image" content="https://rehansandhi181.netlify.app/rehan-sandhi.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/rehan-sandhi.png">
+    <link rel="apple-touch-icon" href="/rehan-sandhi.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Preload Critical Image -->
+    <link rel="preload" as="image" href="/rehan-sandhi.png">
+
+    <!-- ============ STRUCTURED DATA ============ -->
+    
+    <!-- Person Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Rehan Sandhi",
+      "givenName": "Rehan",
+      "familyName": "Sandhi",
+      "url": "https://rehansandhi181.netlify.app",
+      "image": "https://rehansandhi181.netlify.app/rehan-sandhi.png",
+      "sameAs": [
+        "https://www.instagram.com/rehan_sandhi_181/",
+        "https://wa.me/919725936153",
+        "https://rehan-sandhi.blogspot.com/"
+      ],
+      "jobTitle": "Web Developer",
+      "description": "Rehan Sandhi is a web developer specializing in fast, modern, SEO-optimized static websites using HTML, CSS, JavaScript, and Netlify.",
+      "email": "rehansandhi181@proton.me",
+      "telephone": "+919725936153",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IN"
+      }
+    }
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+
+    <!-- ImageObject Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ImageObject",
+      "contentUrl": "https://rehansandhi181.netlify.app/rehan-sandhi.png",
+      "name": "Rehan Sandhi - Web Developer",
+      "description": "Official photo of Rehan Sandhi, Web Developer.",
+      "caption": "Rehan Sandhi - Web Developer Portrait",
+      "author": {
+        "@type": "Person",
+        "name": "Rehan Sandhi"
+      },
+      "license": "https://rehan-sandhi.blogspot.com/2026/02/my-license.html"
+    }
+    </script>
+
+    <!-- WebSite Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Rehan Sandhi - Web Developer",
+      "url": "https://rehansandhi181.netlify.app",
+      "description": "Official website of Rehan Sandhi, Web Developer.",
+      "publisher": {
+        "@type": "Person",
+        "name": "Rehan Sandhi"
+      }
+    }
+    </script>
 </head>
 <body>
-
-    <div id="info">
-        <h3>Gesture Controls:</h3>
-        <p>🖐 <b>Move Hand:</b> Attract/Move particles</p>
-        <p>🤏 <b>Pinch (Index+Thumb):</b> Switch Shape</p>
-        <p>Current Shape: <span id="shape-name">Random</span></p>
-    </div>
-    <video id="input_video"></video>
-
-    <script type="module">
-        import * as THREE from 'three';
-
-        // --- CONFIGURATION ---
-        const PARTICLE_COUNT = 15000;
-        const CAM_Z = 50;
-        let currentShapeIndex = 0;
-        const shapes = ['Random', 'Sphere', 'Heart', 'Saturn', 'Flower'];
-        let isPinching = false;
-        
-        // --- THREE.JS SETUP ---
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        camera.position.z = CAM_Z;
-
-        const renderer = new THREE.WebGLRenderer({ antialias: true });
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        document.body.appendChild(renderer.domElement);
-
-        // --- PARTICLE SYSTEM ---
-        const geometry = new THREE.BufferGeometry();
-        const positions = new Float32Array(PARTICLE_COUNT * 3);
-        const targetPositions = new Float32Array(PARTICLE_COUNT * 3); // Where particles want to go
-        const colors = new Float32Array(PARTICLE_COUNT * 3);
-
-        const color1 = new THREE.Color(0x00ffff); // Cyan
-        const color2 = new THREE.Color(0xff00ff); // Magenta
-
-        for (let i = 0; i < PARTICLE_COUNT; i++) {
-            positions[i * 3] = (Math.random() - 0.5) * 100;
-            positions[i * 3 + 1] = (Math.random() - 0.5) * 100;
-            positions[i * 3 + 2] = (Math.random() - 0.5) * 100;
-
-            // Initial Colors
-            colors[i * 3] = color1.r;
-            colors[i * 3 + 1] = color1.g;
-            colors[i * 3 + 2] = color1.b;
-        }
-
-        geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
-        geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
-
-        const material = new THREE.PointsMaterial({
-            size: 0.3,
-            vertexColors: true,
-            blending: THREE.AdditiveBlending,
-            transparent: true,
-            opacity: 0.8
-        });
-
-        const particles = new THREE.Points(geometry, material);
-        scene.add(particles);
-
-        // --- SHAPE GENERATORS ---
-        function setTargetShape(shapeType) {
-            document.getElementById('shape-name').innerText = shapeType;
-            const scale = 15; 
+    <!-- Navigation -->
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="container nav-container">
+            <a href="/" class="logo" aria-label="Rehan Sandhi Home">
+                <span class="logo-icon">✦</span> RS <span class="logo-icon">✦</span>
+            </a>
             
-            for (let i = 0; i < PARTICLE_COUNT; i++) {
-                let x, y, z;
-                const i3 = i * 3;
+            <!-- Hamburger Button (Mobile) -->
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="navMenu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#connect">Connect</a></li>
+            </ul>
+        </div>
+    </nav>
 
-                if (shapeType === 'Random') {
-                    x = (Math.random() - 0.5) * 80;
-                    y = (Math.random() - 0.5) * 80;
-                    z = (Math.random() - 0.5) * 80;
-                } 
-                else if (shapeType === 'Sphere') {
-                    const r = scale * 1.5;
-                    const theta = Math.random() * Math.PI * 2;
-                    const phi = Math.acos(2 * Math.random() - 1);
-                    x = r * Math.sin(phi) * Math.cos(theta);
-                    y = r * Math.sin(phi) * Math.sin(theta);
-                    z = r * Math.cos(phi);
-                }
-                else if (shapeType === 'Heart') {
-                    // Parametric Heart
-                    const t = Math.random() * Math.PI * 2;
-                    const r = scale * 0.05; // dense core
-                    // Spread particles randomly within the volume
-                    const xp = 16 * Math.pow(Math.sin(t), 3);
-                    const yp = 13 * Math.cos(t) - 5 * Math.cos(2*t) - 2 * Math.cos(3*t) - Math.cos(4*t);
-                    
-                    x = xp * (scale/16) + (Math.random()-0.5)*2;
-                    y = yp * (scale/16) + (Math.random()-0.5)*2;
-                    z = (Math.random() - 0.5) * 5;
-                }
-                else if (shapeType === 'Saturn') {
-                    // 70% Planet, 30% Rings
-                    if (i < PARTICLE_COUNT * 0.7) {
-                        // Planet
-                        const r = scale; 
-                        const theta = Math.random() * Math.PI * 2;
-                        const phi = Math.acos(2 * Math.random() - 1);
-                        x = r * Math.sin(phi) * Math.cos(theta);
-                        y = r * Math.sin(phi) * Math.sin(theta);
-                        z = r * Math.cos(phi);
-                    } else {
-                        // Rings
-                        const angle = Math.random() * Math.PI * 2;
-                        const radius = scale * (1.4 + Math.random()); 
-                        x = radius * Math.cos(angle);
-                        z = radius * Math.sin(angle); // Flat on XZ plane
-                        y = (Math.random() - 0.5) * 1;
-                        
-                        // Tilt the rings
-                        const tilt = 0.4;
-                        const yt = y * Math.cos(tilt) - z * Math.sin(tilt);
-                        const zt = y * Math.sin(tilt) + z * Math.cos(tilt);
-                        y = yt; z = zt;
-                    }
-                }
-                else if (shapeType === 'Flower') {
-                     const r = scale * Math.sqrt(Math.random());
-                     const theta = Math.random() * Math.PI * 2;
-                     const k = 4; // number of petals
-                     const r_petal = Math.cos(k * theta);
-                     
-                     x = r * r_petal * Math.cos(theta) * 2;
-                     y = r * r_petal * Math.sin(theta) * 2;
-                     z = (Math.random() - 0.5) * 10;
-                }
+    <!-- About Section -->
+    <header class="hero" id="about">
+        <div class="container hero-grid">
+            <div class="hero-image">
+                <img 
+                    src="/rehan-sandhi.png" 
+                    alt="Rehan Sandhi - Web Developer | Building fast, modern websites" 
+                    title="Rehan Sandhi - Web Developer"
+                    width="400" 
+                    height="400"
+                    loading="eager"
+                    decoding="async"
+                >
+            </div>
+            <div class="hero-text">
+                <h1 class="gradient-text">Rehan Sandhi</h1>
+                <p class="tagline">Web Developer</p>
+                <p class="bio">
+                    I build <strong>fast & modern,</strong> websites<br>
+                    and performance that make users happy.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-code"></i> View My Work
+                    </a>
+                    <a href="#connect" class="btn btn-outline">
+                        <i class="fas fa-paper-plane"></i> Hire Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-                targetPositions[i3] = x;
-                targetPositions[i3 + 1] = y;
-                targetPositions[i3 + 2] = z;
-            }
-        }
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <h2 class="section-title">Tech <span class="gradient-text">Stack</span></h2>
+            <p class="section-desc">Tools and technologies I work with daily.</p>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-cloud"></i>
+                    <span>Netlify</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-search"></i>
+                    <span>SEO</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-bolt"></i>
+                    <span>Performance</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>Responsive</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        // Initialize first shape
-        setTargetShape(shapes[0]);
-
-        // --- HAND TRACKING INTEGRATION ---
-        let handX = 0, handY = 0;
-        let handDetected = false;
-
-        const videoElement = document.getElementById('input_video');
-        const hands = new Hands({locateFile: (file) => {
-            return `https://cdn.jsdelivr.net/npm/@mediapipe/hands/${file}`;
-        }});
-
-        hands.setOptions({
-            maxNumHands: 1,
-            modelComplexity: 1,
-            minDetectionConfidence: 0.5,
-            minTrackingConfidence: 0.5
-        });
-
-        hands.onResults((results) => {
-            if (results.multiHandLandmarks && results.multiHandLandmarks.length > 0) {
-                handDetected = true;
-                const landmarks = results.multiHandLandmarks[0];
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+            <p class="section-desc">Here's what I've built recently.</p>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>RS App Store</h3>
+                    <p>A curated collection of tools and apps — built for speed and simplicity.</p>
+                    <a href="https://rs-appstore.blogspot.com" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                        Visit Site <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
                 
-                // Index finger tip is landmark 8
-                // Coordinates are normalized 0-1. Map to 3D world space approx.
-                // We invert X because the camera is mirrored
-                handX = (0.5 - landmarks[8].x) * 60; 
-                handY = (0.5 - landmarks[8].y) * 40;
-
-                // Detect Pinch (Thumb Tip 4 to Index Tip 8)
-                const dx = landmarks[8].x - landmarks[4].x;
-                const dy = landmarks[8].y - landmarks[4].y;
-                const distance = Math.sqrt(dx*dx + dy*dy);
-
-                if (distance < 0.05) {
-                    if (!isPinching) {
-                        isPinching = true;
-                        // Cycle Shape
-                        currentShapeIndex = (currentShapeIndex + 1) % shapes.length;
-                        setTargetShape(shapes[currentShapeIndex]);
-                        
-                        // Change color on switch
-                        const r = Math.random();
-                        const g = Math.random();
-                        const b = Math.random();
-                        for(let k=0; k<PARTICLE_COUNT*3; k+=3){
-                             colors[k] = r + (Math.random()-0.5)*0.2;
-                             colors[k+1] = g + (Math.random()-0.5)*0.2;
-                             colors[k+2] = b + (Math.random()-0.5)*0.2;
-                        }
-                        geometry.attributes.color.needsUpdate = true;
-                    }
-                } else {
-                    isPinching = false;
-                }
-
-            } else {
-                handDetected = false;
-            }
-        });
-
-        const cameraUtils = new Camera(videoElement, {
-            onFrame: async () => {
-                await hands.send({image: videoElement});
-            },
-            width: 640,
-            height: 480
-        });
-        cameraUtils.start();
-
-        // --- ANIMATION LOOP ---
-        const clock = new THREE.Clock();
-
-        function animate() {
-            requestAnimationFrame(animate);
-
-            const time = clock.getElapsedTime();
-            const positionsArr = geometry.attributes.position.array;
-
-            for (let i = 0; i < PARTICLE_COUNT; i++) {
-                const i3 = i * 3;
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>This Website</h3>
+                    <p>My official web developer portfolio — SEO-optimized, lightning fast, dark theme.</p>
+                    <a href="https://rehansandhi181.netlify.app" class="btn btn-outline btn-sm">
+                        You're Here <i class="fas fa-smile"></i>
+                    </a>
+                </div>
                 
-                // 1. Lerp towards target shape (Morphing effect)
-                // We move 5% of the way to the target every frame for smoothness
-                positionsArr[i3] += (targetPositions[i3] - positionsArr[i3]) * 0.05;
-                positionsArr[i3 + 1] += (targetPositions[i3 + 1] - positionsArr[i3 + 1]) * 0.05;
-                positionsArr[i3 + 2] += (targetPositions[i3 + 2] - positionsArr[i3 + 2]) * 0.05;
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-folder-open"></i>
+                    </div>
+                    <h3>More Coming Soon</h3>
+                    <p>Working on new projects. Interested in collaborating? Let's connect!</p>
+                    <a href="#connect" class="btn btn-outline btn-sm">
+                        Let's Talk <i class="fas fa-comment"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                // 2. Hand Interaction (Repulsion/Attraction)
-                if (handDetected) {
-                    const dx = positionsArr[i3] - handX;
-                    const dy = positionsArr[i3 + 1] - handY;
-                    const dist = Math.sqrt(dx*dx + dy*dy);
-                    
-                    // If close to hand, expand outwards (interaction)
-                    if (dist < 15) {
-                        const force = (15 - dist) * 0.5; // Strength
-                        positionsArr[i3] += (dx / dist) * force;
-                        positionsArr[i3 + 1] += (dy / dist) * force;
-                    }
-                }
+    <!-- Connect Section -->
+    <section class="connect-section" id="connect">
+        <div class="container">
+            <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+            <p class="section-desc">Need a fast website? Want to collaborate? Reach out — I'm just a message away.</p>
+            
+            <div class="social-grid">
+                <a href="https://www.instagram.com/rehan_sandhi_181/" class="social-card instagram" target="_blank" rel="me noopener">
+                    <i class="fab fa-instagram"></i>
+                    <span class="social-name">Instagram</span>
+                    <span class="social-handle">@rehan_sandhi_181</span>
+                </a>
+                
+                <a href="https://wa.me/919725936153" class="social-card whatsapp" target="_blank" rel="me noopener">
+                    <i class="fab fa-whatsapp"></i>
+                    <span class="social-name">WhatsApp</span>
+                    <span class="social-handle">+91 97259 36153</span>
+                </a>
+                
+                <a href="mailto:rehansandhi181@proton.me" class="social-card email">
+                    <i class="fas fa-envelope"></i>
+                    <span class="social-name">Email</span>
+                    <span class="social-handle">Proton Mail</span>
+                </a>
+                
+                <a href="tel:+919725936153" class="social-card phone">
+                    <i class="fas fa-phone"></i>
+                    <span class="social-name">Call</span>
+                    <span class="social-handle">+91 97259 36153</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
-                // 3. Subtle idle animation
-                if (!handDetected) {
-                     positionsArr[i3] += Math.sin(time + positionsArr[i3 + 1] * 0.5) * 0.02;
-                }
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Rehan Sandhi. All Rights Reserved.</p>
+                <p class="footer-license">
+                    <a href="https://rehan-sandhi.blogspot.com/2026/02/my-license.html" target="_blank" rel="noopener">
+                        <i class="fas fa-shield-alt"></i> License
+                    </a>
+                </p>
+                <p class="footer-tagline">Built with ❤️ | Web Developer</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Back to top
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            backToTop.classList.toggle('visible', window.scrollY > 500);
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Instant Dropdown Menu
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+            hamburger.setAttribute('aria-expanded', navMenu.classList.contains('show'));
+        });
+
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('show');
+                hamburger.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+                navMenu.classList.remove('show');
+                hamburger.setAttribute('aria-expanded', 'false');
             }
-
-            geometry.attributes.position.needsUpdate = true;
-
-            // Rotate entire system slowly
-            particles.rotation.y = time * 0.1;
-
-            renderer.render(scene, camera);
-        }
-
-        animate();
-
-        // Resize handler
-        window.addEventListener('resize', () => {
-            camera.aspect = window.innerWidth / window.innerHeight;
-            camera.updateProjectionMatrix();
-            renderer.setSize(window.innerWidth, window.innerHeight);
         });
     </script>
 </body>
